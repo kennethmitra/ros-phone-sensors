@@ -8,11 +8,15 @@
         <table>
             <tr>
                 <th>Sensor</th>
+                <th>Enable</th>
                 <th>Information</th>
             </tr>
             <tr>
                 <td>
                     Device Orientation
+                </td>
+                <td>
+                    <button id="enable_device_orientation_btn">Enable</button>
                 </td>
                 <td id="device_orientation_out">NULL</td>
             </tr>
@@ -20,11 +24,26 @@
                 <td>
                     Device Motion
                 </td>
+                <td>
+                    <button id="enable_device_motion_btn">Enable</button>
+                </td>
                 <td id="device_motion_out">NULL</td>
             </tr>
             <tr>
                 <td>
+                    Geolocation
+                </td>
+                <td>
+                    <button id="enable_geolocation_btn">Enable</button>
+                </td>
+                <td id="geolocation_out">NULL</td>
+            </tr>
+            <tr>
+                <td>
                     Camera 0
+                </td>
+                <td>
+                    <button id="enable_camera_0_btn">Enable</button>
                 </td>
                 <td id="camera_0_out">NULL</td>
             </tr>
@@ -32,8 +51,19 @@
                 <td>
                     Camera 1
                 </td>
+                <td>
+                    <button id="enable_camera_1_btn">Enable</button>
+                </td>
                 <td id="camera_1_out">NULL</td>
             </tr>
         </table>
+
+        <div id="info">
+            <p>Warning: Currently, Firefox and Chrome do not handle the coordinates the same way. Take care about this while using them.</p>
+        </div>
+
+        <!--Scripts-->
+        <script src="gyronorm.complete.min.js"></script>
+        <script src="sensors.js"></script>
     </body>
 </html>
